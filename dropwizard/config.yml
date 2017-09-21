@@ -1,0 +1,10 @@
+logging:
+  level: INFO
+server:
+  applicationContextPath: /*
+  applicationConnectors:
+  - type: http
+    port: 8080
+  adminConnectors:
+  - type: http
+    port: 8090
