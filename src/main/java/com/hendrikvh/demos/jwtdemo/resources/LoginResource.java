@@ -3,7 +3,6 @@ package com.hendrikvh.demos.jwtdemo.resources;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 import static org.jose4j.jws.AlgorithmIdentifiers.HMAC_SHA256;
 
-import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -30,10 +29,6 @@ import io.dropwizard.jersey.caching.CacheControl;
 @Path("auth")
 @Produces(APPLICATION_JSON)
 public class LoginResource {
-
-	@Inject
-	public LoginResource() {
-	}
 
 	@GET
 	@Path("/login")
